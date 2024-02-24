@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71960F12B88CA130010AA18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71960F02B88CA130010AA18 /* DetailViewController.swift */; };
 		F75BD1742B8866EC006F2977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD1732B8866EC006F2977 /* AppDelegate.swift */; };
 		F75BD1762B8866EC006F2977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD1752B8866EC006F2977 /* SceneDelegate.swift */; };
 		F75BD1782B8866EC006F2977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD1772B8866EC006F2977 /* ViewController.swift */; };
 		F75BD17B2B8866EC006F2977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75BD1792B8866EC006F2977 /* Main.storyboard */; };
 		F75BD17D2B8866EC006F2977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75BD17C2B8866EC006F2977 /* Assets.xcassets */; };
 		F75BD1802B8866EC006F2977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75BD17E2B8866EC006F2977 /* LaunchScreen.storyboard */; };
+		F75BD1882B886901006F2977 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD1872B886901006F2977 /* MyTableViewCell.swift */; };
+		F75BD18A2B886D49006F2977 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD1892B886D49006F2977 /* TaskModel.swift */; };
+		F75BD18D2B88752B006F2977 /* XibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BD18B2B88752B006F2977 /* XibTableViewCell.swift */; };
+		F75BD18E2B88752B006F2977 /* XibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75BD18C2B88752B006F2977 /* XibTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F71960F02B88CA130010AA18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F75BD1702B8866EC006F2977 /* TableViewApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75BD1732B8866EC006F2977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75BD1752B8866EC006F2977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		F75BD17C2B8866EC006F2977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75BD17F2B8866EC006F2977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75BD1812B8866EC006F2977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75BD1872B886901006F2977 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F75BD1892B886D49006F2977 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		F75BD18B2B88752B006F2977 /* XibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibTableViewCell.swift; sourceTree = "<group>"; };
+		F75BD18C2B88752B006F2977 /* XibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		F75BD1722B8866EC006F2977 /* TableViewApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				F75BD1912B887579006F2977 /* Controller */,
+				F75BD1902B887571006F2977 /* Model */,
+				F75BD18F2B887567006F2977 /* View */,
 				F75BD1732B8866EC006F2977 /* AppDelegate.swift */,
 				F75BD1752B8866EC006F2977 /* SceneDelegate.swift */,
-				F75BD1772B8866EC006F2977 /* ViewController.swift */,
 				F75BD1792B8866EC006F2977 /* Main.storyboard */,
 				F75BD17C2B8866EC006F2977 /* Assets.xcassets */,
 				F75BD17E2B8866EC006F2977 /* LaunchScreen.storyboard */,
 				F75BD1812B8866EC006F2977 /* Info.plist */,
 			);
 			path = TableViewApp1;
+			sourceTree = "<group>";
+		};
+		F75BD18F2B887567006F2977 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F75BD1872B886901006F2977 /* MyTableViewCell.swift */,
+				F75BD18B2B88752B006F2977 /* XibTableViewCell.swift */,
+				F75BD18C2B88752B006F2977 /* XibTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F75BD1902B887571006F2977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F75BD1892B886D49006F2977 /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F75BD1912B887579006F2977 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F75BD1772B8866EC006F2977 /* ViewController.swift */,
+				F71960F02B88CA130010AA18 /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +167,7 @@
 				F75BD1802B8866EC006F2977 /* LaunchScreen.storyboard in Resources */,
 				F75BD17D2B8866EC006F2977 /* Assets.xcassets in Resources */,
 				F75BD17B2B8866EC006F2977 /* Main.storyboard in Resources */,
+				F75BD18E2B88752B006F2977 /* XibTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75BD1782B8866EC006F2977 /* ViewController.swift in Sources */,
+				F75BD1882B886901006F2977 /* MyTableViewCell.swift in Sources */,
+				F75BD18A2B886D49006F2977 /* TaskModel.swift in Sources */,
+				F75BD18D2B88752B006F2977 /* XibTableViewCell.swift in Sources */,
 				F75BD1742B8866EC006F2977 /* AppDelegate.swift in Sources */,
 				F75BD1762B8866EC006F2977 /* SceneDelegate.swift in Sources */,
+				F71960F12B88CA130010AA18 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
